@@ -1,0 +1,235 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: arial;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: lightgray;
+        padding-left: 110px;
+    }
+    
+    .header {
+        position: fixed;
+        background: skyblue;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 5px 2%;
+        display: flex;
+        justify-content: centre;
+        text-align: center;
+        z-index: 100;
+    }
+    
+    .header img {
+        height: 30px;
+    }
+    
+    .logo {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .logo div {
+        font-size: 20px;
+        font-family: arial;
+        font-weight: normal;
+        color: rgb(86, 86, 249);
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .search {
+        margin-left: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .search-bar {
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 150px;
+        border: none;
+        border-radius: 2px;
+        box-shadow: inset 1px 2px 2px grey;
+    }
+    
+    .search-icon img {
+        height: 30px;
+        margin-top: 3px;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 2px;
+        margin-left: -2px;
+        cursor: pointer;
+    }
+    
+    .nav {
+        width: 100%;
+        text-align: center;
+        background: white;
+        display: flex;
+        padding: 10px 0px 10px 10px;
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav-bar {
+        font-size: 14px;
+        font-family: arial;
+        font-weight: normal;
+        margin-left: 5px;
+    }
+    
+    .nav-bar a {
+        color: green;
+        text-decoration: none;
+        margin: 0px 15px;
+        transition: .5s ease-in;
+    }
+    
+    .nav-bar a:hover,
+    .nav-bar a.active {
+        color: blue;
+    }
+    
+    .setting-icon {
+        border: 2px solid lightgray;
+        border-radius: 2px;
+        margin-left: 410px;
+        cursor: pointer;
+    }
+    
+    .setting-icon img {
+        margin-top: 4px;
+        height: 15px;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .container p {
+        font-size: 16px;
+        font-weight: normal;
+        font-family: cursive;
+        color: black;
+        margin-top: 20px;
+        margin-left: 55px;
+    }
+    
+    .slot1 {
+        background: white;
+        padding-bottom: 30px;
+        padding-right: 80px;
+    }
+    
+    .result {
+        font-size: 14px;
+        font-family: arial;
+        font-weight: normal;
+        margin: 20px 0px 0px 55px;
+    }
+    
+    .sort {
+        font-size: 14px;
+        font-family: arial;
+        font-weight: 500;
+        float: right;
+    }
+    
+    .sort span {
+        color: green;
+    }
+    
+    .books-collections {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 25px;
+        margin-top: 39px;
+        margin-left: 55px;
+    }
+    
+    .books-collections img {
+        height: 110px;
+    }
+    
+    .books-collections img:hover {
+        transform: scale(1.04);
+    }
+    
+    .rate {
+        margin-top: -4px;
+    }
+    
+    .rate p {
+        font-size: 14px;
+        font-family: arial;
+        font-weight: 500;
+    }
+    
+    .rate .author {
+        font-weight: bold;
+    }
+    
+    .rate img {
+        height: 15px;
+        cursor: pointer;
+    }
+    
+    .rate div {
+        display: flex;
+    }
+    
+    .price {
+        color: green;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+    .fav {
+        font-size: 14px;
+        margin-left: 55px;
+    }
+    
+    .btn {
+        height: 22px;
+        color: white;
+        background: green;
+        float: right;
+        border: none;
+        padding: 4px 8px 4px 8px;
+        border-radius: 2px;
+        margin-right: 80px;
+        cursor: pointer;
+    }
+    
+    .side-bar {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 47px;
+        width: 125px;
+        background-color: lightblue;
+        padding-left: 6px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    
+    .side-bar .active {
+        color: yellow;
+        font-weight: bold;
+        background: blue;
+        padding-left: 16px;
+    }
+    
+    @media screen and (min-width: 768px) {}
